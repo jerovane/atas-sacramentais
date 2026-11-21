@@ -1,0 +1,15 @@
+{
+  "name": "Atas da Reunião Sacramental",
+  "short_name": "Atas",
+  "description": "Gera o caderno de atas da reunião sacramental da sua unidade, em PDF, pronto para imprimir.",
+  "lang": "pt-BR",
+  "start_url": "../../",
+  "scope": "../../",
+  "display": "browser",
+  "background_color": "#eef2f3",
+  "theme_color": "#003238",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

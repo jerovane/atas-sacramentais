@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Atas da Reunião Sacramental: o templo da estaca em dourado sobre fundo petróleo">
+  <defs>
+    <linearGradient id="fundo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b6e75" />
+      <stop offset="0.55" stop-color="#05474d" />
+      <stop offset="1" stop-color="#00272d" />
+    </linearGradient>
+    <linearGradient id="ouro" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f8e2b0" />
+      <stop offset="0.55" stop-color="#e0aa4f" />
+      <stop offset="1" stop-color="#c88a33" />
+    </linearGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffe9b8" stop-opacity="0.55" />
+      <stop offset="0.6" stop-color="#ffe9b8" stop-opacity="0.12" />
+      <stop offset="1" stop-color="#ffe9b8" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="116" fill="url(#fundo)" />
+  <circle cx="256" cy="262" r="214" fill="url(#halo)" />
+
+  <g transform="translate(0 21)">
+    <!-- o templo: agulha, torre e degraus -->
+    <g fill="url(#ouro)">
+      <path d="M256 50 L263.5 100 L248.5 100 Z" />
+      <rect x="238" y="98" width="36" height="74" rx="3" />
+      <rect x="218" y="162" width="76" height="52" rx="3" />
+      <rect x="190" y="206" width="132" height="52" rx="3" />
+      <rect x="146" y="250" width="220" height="142" rx="4" />
+    </g>
+    <!-- os três arcos vazados -->
+    <g fill="#04343a">
+      <path d="M218 392 V318 A38 38 0 0 1 294 318 V392 Z" />
+      <path d="M156 392 V346 A22 22 0 0 1 200 346 V392 Z" />
+      <path d="M312 392 V346 A22 22 0 0 1 356 346 V392 Z" />
+    </g>
+    <!-- a colina onde o templo está -->
+    <path d="M70 421 Q256 363 442 421" fill="none" stroke="url(#ouro)" stroke-width="11" stroke-linecap="round" />
+  </g>
+
+  <!-- brilhos -->
+  <path d="M404 96 L411.5 119 L434 126.500 L411.5 134 L404 157 L396.500 134 L374 126.500 L396.500 119 Z" fill="#fbe7b9" />
+  <path d="M110 178 L114 190 L126 194 L114 198 L110 210 L106 198 L94 194 L106 190 Z" fill="#fbe7b9" opacity="0.85" />
+</svg>

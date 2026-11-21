@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Atas da Reunião Sacramental · Estaca Pacajus Brasil</title>
+    <meta name="description" content="Motor de atas da reunião sacramental das unidades da Estaca Pacajus Brasil: escolha a unidade e o ano e baixe o caderno em PDF, pronto para imprimir." />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#003238" />
+
+    <!-- O ícone da aba: o SVG onde o navegador aceita; PNG e .ico para os demais; ícone da tela inicial do iPhone. -->
+    <link rel="icon" type="image/svg+xml" href="assets/icones/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icones/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icones/favicon-16x16.png" />
+    <link rel="shortcut icon" href="assets/icones/favicon.ico" />
+    <link rel="apple-touch-icon" href="assets/icones/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/icones/site.webmanifest" />
+
+    <!--
+      O cartão que aparece quando o link é colado no WhatsApp, Telegram ou Facebook.
+      As URLs são ABSOLUTAS (o rastreador não resolve caminho relativo) e a imagem tem 1200×630 e menos de 300 KB.
+      O WhatsApp guarda o cartão por URL: ao trocar a arte, troque o NOME do arquivo (og-atas-v2.jpg…).
+    -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Atas da Reunião Sacramental" />
+    <meta property="og:title" content="Atas da Reunião Sacramental · Estaca Pacajus Brasil" />
+    <meta property="og:description" content="Escolha a unidade e o ano e baixe o caderno de atas em PDF, pronto para imprimir e montar." />
+    <meta property="og:url" content="https://jerovane.github.io/atas-sacramentais/" />
+    <meta property="og:image" content="https://jerovane.github.io/atas-sacramentais/assets/compartilhar/og-atas-v1.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="O caderno de atas do ano, pronto para imprimir: a capa do caderno da Estaca Pacajus Brasil ao lado de uma ata." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preload" href="assets/fontes/Inter-Regular.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="assets/fontes/Lora-SemiBold.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+    <a class="pular" href="#app">Ir para o conteúdo</a>
+
+    <header class="topo">
+      <div class="topo__miolo">
+        <a class="topo__marca" href="./" aria-label="Atas da Reunião Sacramental, início">
+          <img src="assets/marca/logo-estaca.png" alt="Estaca Pacajus Brasil" width="104" height="47" />
+        </a>
+        <div class="topo__acoes" id="acoes-do-topo" hidden>
+          <button type="button" class="botao botao--fantasma" data-acao="trocar-senha">Trocar senha</button>
+          <button type="button" class="botao botao--fantasma" data-acao="sair">Sair</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="app" tabindex="-1">
+      <noscript>
+        <p class="aviso aviso--erro">Este site precisa de JavaScript para gerar o caderno. Ative-o no navegador e recarregue a página.</p>
+      </noscript>
+    </main>
+
+    <footer class="rodape">
+      <p>
+        Ferramenta de apoio preparada pela Estaca Pacajus Brasil para as suas unidades. Não é material oficial de A Igreja de Jesus Cristo dos Santos dos Últimos Dias.
+        As atas saem em branco, para preencher à mão: este site não guarda nome nem dado de ninguém.
+      </p>
+    </footer>
+
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>

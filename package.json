@@ -1,0 +1,17 @@
+{
+  "name": "atas-sacramentais",
+  "version": "1.0.0",
+  "description": "Motor de atas da reunião sacramental das unidades da Estaca Pacajus Brasil: escolhe a unidade e o ano e gera o caderno em PDF (capa, instruções, uma ata por domingo, frente e verso).",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "servir": "node ferramentas/servir.mjs",
+    "exemplo": "node ferramentas/gerar-exemplo.mjs",
+    "senha": "node ferramentas/definir-senha.mjs"
+  },
+  "devDependencies": {
+    "pdfkit": "0.20.2"
+  }
+}
