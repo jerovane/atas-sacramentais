@@ -1,7 +1,7 @@
 # Publica o site no GitHub Pages a cada alteração na branch main.
 #
 # Antes de publicar, roda os testes: se algum falhar, nada vai ao ar. Só os arquivos do site são
-# publicados (index.html, css, js, assets, vendor) — testes e ferramentas ficam de fora.
+# publicados (index.html, 404.html, css, js, assets, vendor) — testes e ferramentas ficam de fora.
 #
 # Ativação (uma vez): no GitHub, Settings > Pages > Build and deployment > Source: "GitHub Actions".
 name: Publicar no GitHub Pages
@@ -43,7 +43,7 @@ jobs:
       - name: Montar o site (só o que vai ao ar)
         run: |
           mkdir _site
-          cp -r index.html css js assets vendor _site/
+          cp -r index.html 404.html css js assets vendor _site/
           touch _site/.nojekyll
 
       - uses: actions/configure-pages@v5

@@ -77,8 +77,8 @@ Como foi montado, para refazer em outro repositório:
 
 1. Crie o repositório no GitHub e envie estes arquivos (branch `main`).
 2. Em **Settings → Pages → Build and deployment → Source**, escolha **GitHub Actions** (ou `gh api -X POST repos/DONO/REPO/pages -f build_type=workflow`). Faça isto **antes** do primeiro envio: o passo `configure-pages` do fluxo falha se o Pages ainda não existe.
-3. A cada alteração em `main`, o fluxo `.github/workflows/publicar.yml` **roda os testes** e, se todos passarem, publica só o que é do site (`index.html`, `css`, `js`, `assets`, `vendor`). Se um teste falhar, nada vai ao ar.
-4. Em outro endereço (outro usuário, outro nome, domínio próprio), troque as URLs absolutas `og:url` e `og:image` do `index.html`: é o único lugar do site que não usa caminho relativo.
+3. A cada alteração em `main`, o fluxo `.github/workflows/publicar.yml` **roda os testes** e, se todos passarem, publica só o que é do site (`index.html`, `404.html`, `css`, `js`, `assets`, `vendor`). Se um teste falhar, nada vai ao ar.
+4. Em outro endereço (outro usuário, outro nome, domínio próprio), troque as URLs absolutas `og:url` e `og:image` do `index.html` e as da página `404.html`: são os únicos lugares do site que não usam caminho relativo (a página de erro é servida de qualquer profundidade, por isso só usa endereço absoluto).
 
 Os caminhos do site são **relativos**, então funciona em qualquer subpasta do `github.io`.
 
